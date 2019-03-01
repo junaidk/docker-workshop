@@ -20,6 +20,7 @@ docker run -d \
 -e POSTGRES_PASSWORD=mysecretpassword \
 --net flask-net \
 --name flask-postgres \
+-v /my/own/datadir:/var/lib/postgresql/data \
  postgres
 ```
 
